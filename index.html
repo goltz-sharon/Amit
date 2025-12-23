@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>בר המצווה של עמית</title>
-  <!-- תגיות לתצוגה מקדימה בוואטסאפ וברשתות חברתיות -->
+    
+    <!-- תגיות לתצוגה מקדימה בוואטסאפ וברשתות חברתיות -->
     <meta property="og:title" content="הזמנה לבר המצווה של עמית">
     <meta property="og:description" content="נשמח לראותכם חוגגים איתנו ב-31.01.2025">
-    <meta property="og:image" content="https://github.com/goltz-sharon/Amit/blob/main/CoverAmit.png">
+    <!-- שימוש בקישור ה-Raw כדי שהתמונה תופיע בוואטסאפ -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/goltz-sharon/Amit/main/CoverAmit.png">
     <meta property="og:url" content="https://goltz-sharon.github.io/Amit/">
-    <meta property="og:image:alt" content="Short alt text for the preview image">
+    <meta property="og:image:alt" content="הזמנה לבר המצווה של עמית">
     <meta property="og:type" content="website">
 
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -33,17 +34,16 @@
     <!-- קונטיינר ראשי קומפקטי -->
     <div class="max-w-md mx-auto min-h-screen flex flex-col relative overflow-hidden bg-[#fdfcfb] shadow-2xl">
         
-        <!-- חלק עליון - הגדלנו את הגובה ל-h-80 (320px) במקום h-60 -->
+        <!-- חלק עליון - תמונת כותרת -->
         <div class="relative h-80 overflow-hidden bg-[#e5e7eb]">
-            <!-- תמונה: יש לוודא שהקובץ נמצא באותה תיקייה עם ה-HTML בשם המצוין למטה -->
             <img src="Amit-2.png" 
                  alt="עמית חוגג בר מצווה" 
                  class="w-full h-full object-cover object-top"
-                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'flex items-center justify-center h-full text-slate-400 font-light\'>כאן תופיע התמונה ([...]'
+                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'flex items-center justify-center h-full text-slate-400 font-light p-4 text-center\'>כאן תופיע התמונה<br>(ודאי שקובץ התמונה נמצא בתיקייה)</div>'">
             <div class="absolute inset-0 image-gradient"></div>
         </div>
 
-        <!-- כותרת ופתיח - צפופים וקלילים -->
+        <!-- כותרת ופתיח - מתלבש על התמונה באמצעות margin שלילי -->
         <div class="pt-6 pb-6 px-8 text-center bg-[#f1f3f0] -mt-12 relative z-10 rounded-t-[30px] border-t border-white/50">
             <h1 class="text-3xl font-light tracking-tight text-[#5a6b57] mb-1">
                 <span class="font-bold">עמית חוגג בר מצווה</span>
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <!-- תוכן ההזמנה - מרווחים מהודקים -->
+        <!-- תוכן ההזמנה -->
         <div class="px-6 pt-8 pb-8 space-y-6 flex-grow bg-[#fdfcfb]">
             
             <div class="text-center">
@@ -69,26 +69,28 @@
                 </p>
             </div>
 
-            <!-- פרטי האירועים - כרטיסים קריאים ומהירים -->
+            <!-- פרטי האירועים - פונטים מוגדלים -->
             <div class="grid gap-3">
-                <div class="flex items-center gap-4 p-3 bg-[#f8f9f7] rounded-2xl border border-[#e2e8e1]/50">
-                    <div class="text-2xl">🕍</div>
+                <div class="flex items-center gap-4 p-4 bg-[#f8f9f7] rounded-2xl border border-[#e2e8e1]/50">
+                    <div class="text-3xl">🕍</div>
                     <div>
-                        <h3 class="font-bold text-base text-[#4a5548]">עלייה לתורה</h3>
-                        <p class="text-xs text-slate-500">בית כנסת "בית סמואלי", רעננה | 08:30</p>
+                        <h3 class="font-bold text-lg text-[#4a5548]">עלייה לתורה</h3>
+                        <!-- הגדלנו ל-text-sm במקום text-xs -->
+                        <p class="text-sm text-slate-600 leading-tight">בית כנסת "בית סמואלי", רעננה | 08:30</p>
                     </div>
                 </div>
 
-                <div class="flex items-center gap-4 p-3 bg-[#f8f9f7] rounded-2xl border border-[#e2e8e1]/50">
-                    <div class="text-2xl">🌳</div>
+                <div class="flex items-center gap-4 p-4 bg-[#f8f9f7] rounded-2xl border border-[#e2e8e1]/50">
+                    <div class="text-3xl">🌳</div>
                     <div>
-                        <h3 class="font-bold text-base text-[#4a5548]">חגיגה וצהריים</h3>
-                        <p class="text-xs text-slate-500">חנדל׳ה, גבעת חן | 11:00</p>
+                        <h3 class="font-bold text-lg text-[#4a5548]">חגיגה וצהריים</h3>
+                        <!-- הגדלנו ל-text-sm במקום text-xs -->
+                        <p class="text-sm text-slate-600 leading-tight">חנדל׳ה, גבעת חן | 11:00</p>
                     </div>
                 </div>
             </div>
 
-            <!-- לחצני ניווט מהירים -->
+            <!-- לחצני ניווט -->
             <div class="grid grid-cols-2 gap-3">
                 <a href="https://waze.com/ul/hsv8z13d48" target="_blank" class="flex flex-col items-center py-2 bg-white border border-[#e2e8e1] rounded-xl active:bg-[#f1f3f0]">
                     <span class="text-[9px] uppercase text-slate-400">ניווט Waze</span>
